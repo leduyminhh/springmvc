@@ -14,6 +14,7 @@
 		<jstl.version>1.2</jstl.version>
 		<hibernate.version>4.3.6.Final</hibernate.version>
 		<spring.data>1.11.5.RELEASE</spring.data>
+		<postgresql.version>42.2.10</postgresql.version>
 		<mysql.version>8.0.13</mysql.version>
 		<sitemesh.version>2.4.2</sitemesh.version>
 		<jackson-core.version>2.6.3</jackson-core.version>
@@ -120,6 +121,14 @@
 			<version>${sitemesh.version}</version>
 		</dependency>
 
+		<!-- Postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${postgresql.version}</version>
+		</dependency>
+		
+		<!-- Mysql -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
