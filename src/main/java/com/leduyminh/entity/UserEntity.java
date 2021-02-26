@@ -11,7 +11,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class UserEntity extends AbstractEntity {
 	@Column(name = "username")
 	private String userName;
