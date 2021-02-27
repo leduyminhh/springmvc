@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="com.leduyminh.util.SecurityUtils" %>
 <%@include file="/common/taglibs.jsp"%>
 <div id="navbar" class="navbar navbar-default">
 			<script type="text/javascript">
@@ -34,7 +33,7 @@
 								<img class="nav-user-photo" src="<c:url value='/template/admin/assets/avatars/user.jpg'/>" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Xin chào,</small>
-										<%=SecurityUtils.getPrincipal().getFullName()%>
+										TEN
 								</span>
 
 								<i class="ace-icon fa fa-caret-down"></i>

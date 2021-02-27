@@ -1,4 +1,3 @@
-<%@ page import="com.leduyminh.util.SecurityUtils"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="/common/taglibs.jsp"%>
@@ -42,7 +41,6 @@
 									</ul></li>
 							</ul>
 						</div>
-						<security:authorize access="isAnonymous()">
 							<div class="top_bar_user">
 								<div class="user_icon">
 									<img src=""
@@ -55,22 +53,6 @@
 									<a href="<c:url value='/dang-nhap'/>">Đăng nhập</a>
 								</div>
 							</div>
-						</security:authorize>
-						<security:authorize access="isAuthenticated()">
-							<div class="top_bar_user">
-								<div class="user_icon">
-									<img src="<c:url value = '/template/web/images/user.svg'/>"
-										alt="">
-								</div>
-								<div>
-									<a href="<c:url value='/chi-tiet'/>"><%=SecurityUtils.getPrincipal().getFullName()%></a>
-								</div>
-								<div>
-									<a href="<c:url value='/dang-xuat'/>">Đăng Xuất</a>
-								</div>
-							</div>
-						</security:authorize>
-
 					</div>
 				</div>
 			</div>
